@@ -478,12 +478,14 @@ li .ninja-icons {
     color: white;
 }
 
-.ninja-faq a.collapsed i {
-    transform: rotate(0deg);
+.ninja-faq a i {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transform: rotate(180deg);
 }
 
-.ninja-faq a i {
-    transform: rotate(180deg);
+.ninja-faq a.collapsed i {
+    transform: rotate(0deg);
 }
 
 .chevron-right {

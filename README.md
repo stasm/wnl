@@ -1,2 +1,2 @@
 # wnl
-Landing Warszawski Ninja
+<a href="warszawskininja.pl">Warszawski Ninja</a>

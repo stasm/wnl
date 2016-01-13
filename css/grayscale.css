@@ -56,7 +56,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: yellow;
+    color: rgba(0,0,0,0.9);
 }
 
 .light {
@@ -472,4 +472,21 @@ li .ninja-icons {
     padding-top: 50px;
     padding-bottom: 50px;
     color: black;
+}
+
+.chevron-right {
+    float: right;
+}
+
+.chevron-right:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+}
+
+.panel-heading {
+    margin: 5px ;
 }

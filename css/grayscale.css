@@ -474,17 +474,20 @@ li .ninja-icons {
     color: black;
 }
 
-.chevron-right {
-    float: right;
+.ninja-faq h1 {
+    color: white;
 }
 
-.chevron-right:after {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+.ninja-faq a.collapsed i {
+    transform: rotate(0deg);
+}
+
+.ninja-faq a i {
     transform: rotate(180deg);
 }
+
+.chevron-right {
+    float: right;
 }
 
 .panel-heading {

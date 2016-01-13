@@ -480,8 +480,8 @@ li .ninja-icons {
 
 .ninja-faq a i {
     transition-property: transform;
-    transition-duration: 0.2s;
-    transform: rotate(180deg);
+    transition-duration: 0.5s;
+    transform: rotate(-180deg);
 }
 
 .ninja-faq a.collapsed i {

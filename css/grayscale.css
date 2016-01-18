@@ -556,3 +556,8 @@ li .ninja-icons {
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: grey; 
 }
+
+.ninja-google-button {
+    max-height: ;
+    max-width: ;
+}

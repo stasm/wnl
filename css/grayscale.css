@@ -557,7 +557,12 @@ li .ninja-icons {
     border-top-color: grey; 
 }
 
+.ninja-web-button {
+    background-color: #00aeed;
+    border-color: #00aeed;
+}
 .ninja-google-button {
     max-height: ;
     max-width: ;
 }
+

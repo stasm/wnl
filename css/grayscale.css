@@ -437,8 +437,14 @@ li .ninja-icons {
     padding-bottom: 100px;
 }
 
+.ninja-kontakt {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .ninja-kontakt h2 {
     color: white;
+    padding-top: 10px;
 }
 
 .ninja-kontakt a {
@@ -455,8 +461,8 @@ li .ninja-icons {
 }
 
 .ninja-faq {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     color: white;
     background-color: grey;
 }

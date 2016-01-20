@@ -57,7 +57,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: rgba(0,0,0,0.9);
+    color: rgba(255,255,255,0.4);
 }
 
 .light {
@@ -90,7 +90,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #000;
+    color: #fff;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -100,18 +100,27 @@ a:focus {
 
 .navbar-custom a {
     color: #000;
+    background-color: #fff;
+}
+
+@media(max-width: 767px) {
+
+    .navbar-custom a{
+        max-width: 40%;
+    }
 }
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    background-color: rgb(255,255,255);
 }
 
 .navbar-custom .nav li a:hover {
     outline: 0;
     color: rgba(0,0,0,.5);
-    background-color: rgba(0,0,0,.5);
+    background-color: rgb(255,255,255);
 }
 
 .navbar-custom .nav li a:focus,
@@ -153,8 +162,8 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 100%;
+    padding: 80px 0;
     text-align: center;
     color: #fff;
     background: url(../img/tram.jpg) no-repeat bottom center scroll;
@@ -169,6 +178,9 @@ a:focus {
     display: table-cell;
     vertical-align: middle;
     background-color: rgba(255,255,255,.3);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 70px;
 }
 
 .intro .intro-body .brand-heading {
@@ -177,7 +189,7 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 2em;
 }
 
 @media(min-width:768px) {
@@ -186,87 +198,18 @@ a:focus {
         padding: 0;
     }
 
+    .intro-body {
+    background-color: rgba(255,255,255,.3);
+    width: 100%;
+    height: 100%;
+    }
+
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
 
     .intro .intro-body .intro-text {
         font-size: 26px;
-    }
-}
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #FFF;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {    
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {    
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
     }
 }
 
@@ -339,7 +282,6 @@ ul.banner-social-buttons {
         margin-top: 15px;
     }
 
-
 }
 
 @media(max-width:767px) {
@@ -392,12 +334,29 @@ body {
 
 .hero-ninja {
     margin-top: 80px;
+    margin-bottom: 80px;
     padding-right: 80px;
     text-align: left;
     color: black;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-weight: 400;
     max-height: 60%;
+}
+
+@media(max-width: 1150px) {
+
+    .ninja-img-div {
+        display: none;
+    }
+
+    .hero-ninja {
+        min-width: 100%;
+    }
+}
+
+.ninja-hero-img {
+    max-width: 360px;
+    min-width: 240px;
 }
 
 .hero-ninja h1 {
@@ -523,6 +482,11 @@ li .ninja-icons {
     margin-top: 10px;
 }
 
+.ninja-logo {
+    max-width: 150px;
+    min-width: 150px;
+}
+
 /* FAQ Section */
 
 .panel{
@@ -560,9 +524,15 @@ li .ninja-icons {
 .ninja-web-button {
     background-color: #00aeed;
     border-color: #00aeed;
+    min-width: 250px;
 }
+
 .ninja-google-button {
     max-height: ;
-    max-width: ;
+    min-width: 120px;
+}
+
+.ninja-row {
+    padding-bottom: 25px;
 }
 

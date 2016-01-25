@@ -557,6 +557,11 @@ li .ninja-icons {
     min-width: 120px;
 }
 
+.ninja-apple-button {
+    max-width: 177px;
+    min-width: 122px;
+}
+
 .ninja-row {
     padding-bottom: 25px;
 }

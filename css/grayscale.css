@@ -505,6 +505,7 @@ li .ninja-icons {
 
 .ninja-buttons-row {
     margin-top: 10px;
+    min-width: 250px;
 }
 
 .ninja-logo {
